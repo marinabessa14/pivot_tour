@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Blinker:wght@100;200;300;400;600;700;800;900&family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,800&family=Orbitron:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --White: hsl(240, 33%, 97%);
+    --Dark-Yellow: hsl(64, 32%, 9%);
+    --Medium-Yellow: hsl(51, 89%, 57%);
+    --Light-Yellow: hsl(59, 72%, 83%);
+    --Clear-Yellow: hsl(60, 67%, 91%);
+    --Cyan-Yellow: hsl(59, 100%, 81%);
+    --Gray-Yellow: hsl(49, 98%, 61%);
+    --Mart-Yellow: hsl(0, 0%, 87%);
+  }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+}
+
+/* Header */
+
+.header-menu {
+   background-color: var(--Medium-Yellow);
+    height: 100vh;
+}
+
+.header-menu a {
+    color: var(--Dark-Yellow);
+}
+
+.header-menu a:hover {
+    color: var(--Medium-Yellow);
+}
+
+.navbar .navbar-brand:hover {
+    color: var(--Medium-Yellow);
+
+}
+
+.navbar-nav .nav-item {
+    padding-right: 1.5em;
+}
+
+/* Section Home */
+
+
+.title {
+    text-transform: uppercase;
+}
+
+.text-title{
+    font-size: 25px;
+}
+
+/* Main*/
+
+
+.container-pacote {
+    background-color: var(--Light-Yellow);
+}
+
+.subtitle-card {
+    font-weight: bold;
+    
+}
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+    padding: 15px; 
+  }
+.text-card {
+    font-weight: bold;
+}
+
+.card-text {
+    font-weight: bold;
+    margin-bottom: 10px; 
+  }
+
+  .card-total {
+    font-weight: bold;
+    margin-bottom: 15px; 
+  }
+  
+
+.container h5 {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container-subtitle{
+    font-size: 20px;
+    font-weight: bold;
+   
+}
+
+.projects .card {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    height: 100%;
+}
+
+.card-img-top {
+    height: 200px; 
+    object-fit: cover;
+  }
+
+/* Section Cruzeiro*/
+
+.container-cruzeiro {
+    background-color: var(--Clear-Yellow);
+
+}
+
+
+/* Section Hotel*/
+
+.container-hotel {
+    background-color: var(--Cyan-Yellow);
+}
+
+/* Section Form */
+
+.form-container {
+    background-color: var(--Gray-Yellow);
+}
+
+.section-form {
+  padding: 15px;
+}
+
+
+.text-input {
+    color: red;
+    font-size: 12px;
+}
+
+
+.text-check {
+    color: red;
+    font-size: 15px;
+}
+
+.form-check-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+}
+
+.btn-warning {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    
+   
+    
+  }
+
+  .form-check label {
+    font-weight: bold;
+
+  }
+
+  /* Section Sobre */
+
+  .sobre .espaco-entre {
+    padding: 25px;
+  }
+
+  .sobre .borda {
+    border-style: solid  ; 
+    border-color: rgb(243, 243, 243);
+    border-width: 30px;
+   
+
+}
+
+.sobre p {
+    padding: 15px;
+    font-size: 18px;
+    
+}
+
+.espaco-entre img {
+    width: 100%;
+  }
+
+ 
+
+  
+  /* Footer */
+
+  .footer {
+    background-color: var(--Medium-Yellow);
+  }
+
+  .text-copy {
+    font-weight: bold;
+  }
+
+  .text-redes span {
+    font-weight: bold;
+    font-size: 15px;
+  }
+
+  .text-redes i {
+    border-radius: 5px;
+  }
+
+  .telef span {
+    font-weight: bold;
+  }
+
+.termos a {
+    color: #000;
+    font-weight: bold;
+}
+
+
+ /* MOBILE */
+
+@media screen and (max-width: 768px) {
+
+  /* FOOTER */
+
+    .footer .row {
+      flex-direction: column;
+      display: inline;
+    }
+    .footer .col-xl-4 {
+      width: 100%;
+    }
+    .footer, .telef , .title-termos, .title-redes {
+      text-align: center;
+      margin-bottom: 2rem; 
+     
+    }
+ 
+    .title-form {
+    font-size: 22px;
+    }
+
+    .title-redes {
+      padding: 2rem; /* Adjust margin-bottom */
+  }
+  
+.home h1{
+    text-align: center;
+}
+.container-pacote h2 {
+    margin-top: 10rem;
+   }
+}
+
