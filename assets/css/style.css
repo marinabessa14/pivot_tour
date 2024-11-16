@@ -225,36 +225,114 @@ body {
 
  /* MOBILE */
 
-@media screen and (max-width: 768px) {
+ @media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer .row {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
-  /* FOOTER */
+  .footer .col-xl-4 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 
-    .footer .row {
-      flex-direction: column;
-      display: inline;
-    }
-    .footer .col-xl-4 {
-      width: 100%;
-    }
-    .footer, .telef , .title-termos, .title-redes {
-      text-align: center;
-      margin-bottom: 2rem; 
-     
-    }
- 
-    .title-form {
-    font-size: 22px;
-    }
+   /* CARDS */
+  .cards {
+    width: 48%; /* faz com que fique 2 cards por linha */
+    margin: 1%;
+  }
 
-    .title-redes {
-      padding: 2rem; /* Adjust margin-bottom */
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-img-top {
+    height: 180px; /* fique com que a altura fica um pouco menor para tablets */
+  }
+
+
+  /* alinhamento da sessão de telefones */
+  .telef {
+    align-items: center;
   }
   
-.home h1{
+  .telef span {
     text-align: center;
-}
-.container-pacote h2 {
-    margin-top: 10rem;
-   }
+  }
+
+  .title-telef {
+    text-align: center;
+  }
+
+  /* SECTION TERMOS*/
+  .termos {
+    align-items: center;
+    margin: 2rem 0;
+  }
+
+  /* SECTION REDES SOCIAIS */
+  .title-redes {
+    text-align: center;
+    margin: 1rem 0;
+    padding: 0;
+  }
+
+  /* ICONS DO SECTION REDES SOCIAIS */
+  .bi-facebook,
+  .bi-instagram,
+  .bi-twitter-x {
+    display: inline-flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .home h1 {
+    text-align: center;
+  }
+
+  .container-pacote h2 {
+    margin-top: 10rem; 
+  }
 }
 
+/* DISPOSITIVOS MÓVEIS MENORES */
+@media screen and (max-width: 767px) {
+
+  .footer .row {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+
+  .footer .col-xl-4 {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .telef span,
+  .title-telef,
+  .termos,
+  .title-redes {
+    text-align: center !important;
+  }
+
+  .container-pacote h2 {
+   margin-top: 3rem !important;
+   
+  }
+ 
+  .cards {
+    width: 90%;
+    margin: 0 auto 2rem;
+  }
+
+  .card {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  .card-img-top {
+    height: 160px; /* fique com que a altura fica um pouco menor para mobiles */
+  }
+}

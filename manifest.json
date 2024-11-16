@@ -1,0 +1,53 @@
+{
+  "name": "Pivot Tour",
+  "short_name": "Pivot",
+  "start_url": "/",
+  "display": "standalone",
+  "description": "Pivot Tour",
+  "lang": "pt-BR",
+  "dir": "auto",
+  "theme_color": "#ffff42",
+  "background_color": "#ffff42",
+  "orientation": "any",
+  "protocol_handlers": [
+    {
+      "name": "mailto",
+      "url": "/handle-mailto/"
+    }
+  ],
+  "display_override": [
+    "window-controls-overlay"
+  ],
+  "shortcuts": [
+    {
+      "name": "Pivot Tour",
+      "url": "/"
+    }
+  ],
+  "icons": [
+    {
+      "src": "/img/logo-pivot.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/logo-pivot.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/img/logo-pivot-large.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/img/logo-pivot-large.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
