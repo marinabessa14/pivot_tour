@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sem Conexão - Pivot Tour</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+            padding: 20px;
+        }
+        .offline-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            max-width: 500px;
+        }
+        .logo {
+            max-width: 150px;
+            margin-bottom: 20px;
+        }
+        .retry-button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background-color 0.3s;
+        }
+        .retry-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="offline-container">
+        <img src="img/logo-pivot.png" alt="Pivot Tour Logo" class="logo">
+        <h1>Ops! Sem Conexão</h1>
+        <p>Parece que você está offline. Verifique sua conexão com a internet.</p>
+        <p>Algumas funcionalidades podem não estar disponíveis no momento.</p>
+        
+        <button class="retry-button" onclick="window.location.reload()">
+            Tentar Novamente
+        </button>
+
+        <div style="margin-top: 30px;">
+            <h3>Suporte Pivot Tour</h3>
+            <p>Telefone: (11) 99982-6662</p>
+            <p>SAC: (11) 2526-8899</p>
+        </div>
+    </div>
+
+    <script>
+        // Optional: Add listener to check when connection is restored
+        window.addEventListener('online', function() {
+            window.location.reload();
+        });
+    </script>
+</body>
+</html>
