@@ -11,8 +11,8 @@
   "orientation": "any",
   "protocol_handlers": [
     {
-      "name": "mailto",
-      "url": "/handle-mailto/"
+      "protocol": "mailto",
+      "url": "/handle-mailto/?email=%s"
     }
   ],
   "display_override": [
