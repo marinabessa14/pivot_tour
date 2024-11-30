@@ -6,8 +6,8 @@ const ESSENTIAL_CACHE_URLS = [
   './',
   './index.html',
   './offline.html',
-  './css/main.css',
-  './js/main.js',
+  './css/style.css',
+  './js/script.js',
   './img/logo-pivot.png',
   './img/img-home.avif',
   // Imagens de pacotes
