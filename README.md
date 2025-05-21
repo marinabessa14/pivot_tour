@@ -28,6 +28,8 @@ Service Workers: Para caching de recursos e funcionalidades offline.
 
 Web App Manifest: Para definir a aparência e o comportamento da PWA quando instalada.
 
+PWA Builder: Ferramenta utilizada para otimizar e gerar arquivos essenciais para a PWA, facilitando a experiência de instalação.
+
 -----------
 
 Link do projeto: https://pivot-tour.vercel.app/
